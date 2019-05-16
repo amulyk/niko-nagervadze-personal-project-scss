@@ -1,0 +1,29 @@
+.service {
+    padding: 75px 0 8px;
+    background-color: $color-11;
+
+    h3 {
+        margin-bottom: 84px;
+        font-size: 28.99px;
+
+        &::before {
+            bottom: -24px;
+            width: 105px;
+        }
+
+        &::after {
+            bottom: -35px;
+            width: 33px;
+            background-color: $color-11;
+        }
+    }
+
+    .wrapper {
+        flex-direction: column;
+        width: 100%;
+
+        .unit {
+            margin-bottom: 64px;
+        }
+    }
+}

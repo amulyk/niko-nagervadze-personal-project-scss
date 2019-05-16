@@ -1,3 +1,32 @@
-.header {
-    background: yellow;
+header {
+    padding: 16px 23px 15px 20px;
+
+    .wrapper {
+        width: 100%;
+
+        a {
+            font-size: 27.22px;
+
+            &::before {
+                width: 20.6px;
+                height: 31.01px;
+                min-height: initial;
+                background-size: 100%;
+            }
+        }
+    }
+
+    nav {
+        display: none;
+    }
+
+    span.switch {
+        display: inline-block;
+        padding: 6.2px 11.2px 8.2px;
+        transform: translateX(1px);
+
+        span {
+            width: 22px;
+        }
+    }
 }

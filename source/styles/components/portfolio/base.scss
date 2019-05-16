@@ -1,0 +1,136 @@
+.portfolio {
+    padding: 110px 0 0;
+
+    h3 {
+        margin-bottom: 111px;
+        color: $color-5;
+
+        @include font('rel');
+
+        &::before {
+            bottom: -20px;
+            background-color: $color-6;
+        }
+
+        &::after {
+            bottom: -29px;
+            background-color: $color-2;
+            background-image: url(../../../images/portfolio/portfolio.svg);
+        }
+
+        span {
+            color: $color-3;
+        }
+    }
+
+    .wrapper {
+        display: grid;
+        grid-gap: 7px 6px;
+        grid-template-columns: repeat(5, 1fr);
+        grid-template-rows: 1fr 1fr;
+        width: 100%;
+
+        .unit {
+            position: relative;
+            height: 379px;
+            background: $color-11;
+            text-align: center;
+
+            &.col-2 {
+                grid-column: span 2;
+            }
+
+            .hover {
+                display: none;
+                position: absolute;
+                top: 0;
+                width: 100%;
+                height: 100%;
+                background: $color-12;
+
+                .icons {
+                    position: absolute;
+                    top: 160px;
+                    right: 0;
+                    left: -27px;
+
+                    a {
+                        display: inline-block;
+                        position: relative;
+                        width: 46px;
+                        height: 46px;
+                        margin: 0 4px;
+                        border: 2px solid $color-3;
+                        border-radius: 50%;
+                        text-decoration: none;
+
+                        &::before {
+                            content: '';
+                            display: inline-block;
+                            position: absolute;
+                            top: 50%;
+                            left: 50%;
+                            width: 23px;
+                            height: 23px;
+                            transform: translate(-50%, -50%);
+                            background-repeat: no-repeat;
+                        }
+
+                        &.view::before {
+                            margin-top: 5px;
+                            background-image: url(../../../images/portfolio/eye.svg);
+                        }
+
+                        &.more::before {
+                            margin-top: 2px;
+                            background-image: url(../../../images/portfolio/link.svg);
+                        }
+
+                        &.active,
+                        &:hover {
+                            border: none;
+                            background-color: $color-3;
+                        }
+                    }
+                }
+
+                .footarea {
+                    position: absolute;
+                    bottom: 0;
+                    width: 100%;
+                    padding: 18px 0;
+                    background: $color-11;
+
+                    h3 {
+                        margin-bottom: 11px;
+                        margin-left: -18px;
+                        color: $color-2;
+                        font-size: 16.98px;
+                        font-weight: 600;
+
+                        @include font('rel');
+                    }
+
+                    p {
+                        margin-left: -15px;
+                        color: $color-3;
+                        font-size: 12.99px;
+                        font-style: italic;
+                        font-weight: 600;
+
+                        @include font('rel');
+                    }
+                }
+            }
+
+            &.active,
+            &:hover {
+                background: transparent;
+
+                .hover {
+                    display: block;
+                }
+            }
+        }
+    }
+}

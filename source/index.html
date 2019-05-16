@@ -4,10 +4,251 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
+    <meta name="author" content="Niko Nagervadze">
+    <title>Personal Project SCSS :Niko Nagervadze</title>
+    <link rel="shortcut icon" type="image/png" href="../images/logo.png"/>
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,600,700,800|Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i|Raleway:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="/css/main.css">
 </head>
 <body>
-    <div class="header"></div>
+    <header>
+        <div class="wrapper">
+            <a href="#" class="logoarea">Arry</a>
+            <nav>
+                <a href="#">Home</a>
+                <a href="#">ABOUT</a>
+                <a href="#">SERVICES</a>
+                <a href="#">PORTFOLIO</a>
+                <a href="#">TESTIMONIALS</a>
+                <a href="#">TEAM</a>
+                <a href="#">BLOG</a>
+                <a href="#">CONTACT</a>
+            </nav>
+            <span class="switch">
+                <span></span>
+                <span></span>
+                <span></span>
+            </span>
+        </div>
+    </header>
+    <main>
+        <section class="slider">
+            <div class="container">
+                <div class="unit">
+                    <figure>
+                        <img src="" alt="">
+                    </figure>
+                    <div class="content">
+                        <h4>Walk With Parry</h4>
+                        <h3>You Will Love It</h3>
+                        <p>
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum eget faucibus
+                        </p>
+                        <a href="#">READ MORE</a>
+                    </div>
+                </div>
+            </div>
+            <nav>
+                <a href="#" class="prev"></a>
+                <a href="#" class="next"></a>
+            </nav>
+        </section>
+        <!-- slider part ends here -->
+        <section class="about">
+            <h3>WHO <span>WE ARE</span></h3>
+            <div class="wrapper">
+                <div class="poster">
+                    <figure>
+                        <img src="" alt="">
+                    </figure>
+                </div>
+                <div class="content">
+                    <h4>SOME WORDS ABOUT US</h4>
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque semper vel leo a consequat. In hendrerit consectetur vestibulum. Ut pulvinar, urna non sodales lobortis, est eros iacul elit, a venenatis purus nibh rutrum diam utrum diam.
+                    </p>
+                    <div class="list">
+                        <div class="unit feat">
+                            <h6>FEATURES ONE</h6>
+                            <p>Lorem ipsum dolor sit amet,<br/> consectetur adipiscing elit.</p>
+                        </div>
+                        <div class="unit place">
+                            <h6>FEATURES TWO</h6>
+                            <p>Lorem ipsum dolor sit amet,<br/> consectetur adipiscing elit.</p>
+                        </div>
+                        <div class="unit fav">
+                            <h6>FEATURES THREE</h6>
+                            <p>Lorem ipsum dolor sit amet,<br/> consectetur adipiscing elit.</p>
+                        </div>
+                        <div class="unit edit">
+                            <h6>FEATURES FOUR</h6>
+                            <p>
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                            </p>
+                        </div>
+                        <a href="#">READ MORE</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- about -->
+        <section class="service">
+            <h3>SERVICES</h3>
+            <div class="wrapper">
+                <div class="unit rank active">
+                    <h3>OUTRANK COMPETITION</h3>
+                    <p>
+                        Ut wisi enim ad minim veniam, quis trud exerci tation ullamcorper scipit lobortis nisl ut aliquip ex ea comodo consequat.
+                    </p>
+                </div>
+                <div class="unit visitors">
+                    <h3>MORE WEBSITE VISITORS</h3>
+                    <p>
+                        Ut wisi enim ad minim veniam, quis trud exerci tation ullamcorper scipit lobortis nisl ut aliquip ex ea comodo consequat.
+                    </p>
+                </div>
+                <div class="unit sales">
+                    <h3>INCREASE SALES</h3>
+                    <p>
+                        Ut wisi enim ad minim veniam, quis trud exerci tation ullamcorper scipit lobortis nisl ut aliquip ex ea comodo consequat.
+                    </p>
+                </div>
+            </div>
+        </section>
+        <!-- service area ends here -->
+        <section class="portfolio">
+            <h3>PORTFOLIO</h3>
+            <div class="wrapper">
+                <div class="unit col-2 active">
+                    <figure>
+                        <img src="" alt="">
+                    </figure>
+                    <div class="hover">
+                        <div class="icons">
+                            <a href="#" class="view active"></a>
+                            <a href="#" class="more"></a>
+                        </div>
+                        <div class="footarea">
+                            <h3>A WORK OF PHOTOGRAPHY</h3>
+                            <p>
+                                Lorem ipsum dolor sit amat
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <!-- unit area-->
+                <div class="unit">
+                    <figure>
+                        <img src="" alt="">
+                    </figure>
+                    <div class="hover">
+                        <div class="icons">
+                            <a href="#" class="view"></a>
+                            <a href="#" class="more"></a>
+                        </div>
+                        <div class="footarea">
+                            <h3>A WORK OF PHOTOGRAPHY</h3>
+                            <p>
+                                Lorem ipsum dolor sit amat
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <!-- unit area-->
+                <div class="unit col-2">
+                    <figure>
+                        <img src="" alt="">
+                    </figure>
+                    <div class="hover">
+                        <div class="icons">
+                            <a href="#" class="view"></a>
+                            <a href="#" class="more"></a>
+                        </div>
+                        <div class="footarea">
+                            <h3>A WORK OF PHOTOGRAPHY</h3>
+                            <p>
+                                Lorem ipsum dolor sit amat
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <!-- unit area-->
+                <div class="unit">
+                    <figure>
+                        <img src="" alt="">
+                    </figure>
+                    <div class="hover">
+                        <div class="icons">
+                            <a href="#" class="view"></a>
+                            <a href="#" class="more"></a>
+                        </div>
+                        <div class="footarea">
+                            <h3>A WORK OF PHOTOGRAPHY</h3>
+                            <p>
+                                Lorem ipsum dolor sit amat
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <!-- unit area-->
+                <div class="unit col-2">
+                    <figure>
+                        <img src="" alt="">
+                    </figure>
+                    <div class="hover">
+                        <div class="icons">
+                            <a href="#" class="view"></a>
+                            <a href="#" class="more"></a>
+                        </div>
+                        <div class="footarea">
+                            <h3>A WORK OF PHOTOGRAPHY</h3>
+                            <p>
+                                Lorem ipsum dolor sit amat
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <!-- unit area-->
+                <div class="unit">
+                    <figure>
+                        <img src="" alt="">
+                    </figure>
+                    <div class="hover">
+                        <div class="icons">
+                            <a href="#" class="view"></a>
+                            <a href="#" class="more"></a>
+                        </div>
+                        <div class="footarea">
+                            <h3>A WORK OF PHOTOGRAPHY</h3>
+                            <p>
+                                Lorem ipsum dolor sit amat
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <!-- unit area-->
+                <div class="unit">
+                    <figure>
+                        <img src="" alt="">
+                    </figure>
+                    <div class="hover">
+                        <div class="icons">
+                            <a href="#" class="view"></a>
+                            <a href="#" class="more"></a>
+                        </div>
+                        <div class="footarea">
+                            <h3>A WORK OF PHOTOGRAPHY</h3>
+                            <p>
+                                Lorem ipsum dolor sit amat
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <!-- unit -->
+            </div>
+        </section>
+        <!-- portfolio area ends here -->
+    </main>
 </body>
 </html>

@@ -1,0 +1,151 @@
+.about {
+    padding: 117px 0 108px;
+
+    h3 {
+        margin-bottom: 125px;
+        color: $color-5;
+
+        @include font('rel');
+
+        &::before {
+            background-color: $color-6;
+        }
+
+        &::after {
+            background-color: $color-2;
+            background-image: url(../../../images/about/info.svg);
+        }
+
+        span {
+            color: $color-3;
+        }
+    }
+
+    .wrapper {
+        align-items: stretch;
+
+        .poster {
+            flex: 1 0;
+            margin-top: 2px;
+            margin-left: -3px;
+
+            figure {
+                width: 510px;
+                height: 414px;
+                background-image: url(../../../images/about/image.png);
+                background-repeat: no-repeat;
+
+                img {
+                    display: inline-block;
+                    width: 468px;
+                    height: 263px;
+                    margin-top: 21px;
+                    margin-left: 21px;
+                    object-fit: cover;
+                    background: $color-7;
+                }
+            }
+        }
+
+        .content {
+            flex: 1 0;
+            margin-left: 29px;
+
+            h4 {
+                margin-bottom: 24px;
+                color: $color-5;
+                font-size: 31px;
+                font-weight: 600;
+                letter-spacing: -.8px;
+                text-transform: uppercase;
+
+                @include font('rel');
+            }
+
+            & > p {
+                margin-bottom: 47px;
+            }
+
+            p {
+                color: $color-8;
+                font-size: 14px;
+                line-height: 27px;
+
+                @include font('sans');
+            }
+
+            .list {
+                display: flex;
+                flex-wrap: wrap;
+                margin-left: 2px;
+
+                .unit {
+                    flex: 1 0 240px;
+                    margin-bottom: 52px;
+
+                    &:nth-child(even) {
+                        margin-left: 47px;
+                    }
+
+                    &::before {
+                        content: '';
+                        display: inline-block;
+                        width: 63px;
+                        height: 63px;
+                        margin-right: 27px;
+                        float: left;
+                        border-radius: 50%;
+                        background-color: $color-9;
+                        background-repeat: no-repeat;
+                        background-position: center;
+                    }
+
+                    &.feat::before {
+                        background-image: url(../../../images/about/settings.svg);
+                    }
+
+                    &.place::before {
+                        background-image: url(../../../images/about/location.svg);
+                    }
+
+                    &.fav::before {
+                        background-image: url(../../../images/about/heart.svg);
+                    }
+
+                    &.edit::before {
+                        background-image: url(../../../images/about/edit.svg);
+                    }
+
+                    h6 {
+                        margin-top: 2px;
+                        margin-bottom: 10px;
+                        color: $color-5;
+                        font-size: 18px;
+                        font-weight: 800;
+                        letter-spacing: -.4px;
+
+                        @include font('rel');
+                    }
+
+                    p {
+                        transform: translateX(1px);
+                        font-size: 13px;
+                        line-height: 22px;
+                    }
+                }
+
+                & > a {
+                    display: none;
+                    padding: 13px 33px 14px 29px;
+                    background-color: $color-3;
+                    color: $color-2;
+                    font-weight: 700;
+                    text-decoration: none;
+                    text-transform: uppercase;
+
+                    @include font('rel');
+                }
+            }
+        }
+    }
+}
