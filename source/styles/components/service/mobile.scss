@@ -2,16 +2,13 @@
     padding: 38px 0 10px;
     background-color: $color-11;
 
-    h3 {
-        margin-bottom: 73px;
+    & > h3 {
+        margin-bottom: 51px;
+        padding-bottom: 22px;
         font-size: 27px;
 
-        &::before {
-            bottom: -22px;
-        }
-
         &::after {
-            bottom: -30px;
+            bottom: -8px;
             width: 37px;
             background-color: $color-11;
         }

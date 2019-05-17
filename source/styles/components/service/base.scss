@@ -3,18 +3,18 @@
     background-color: $color-10;
 
     & > h3 {
-        margin-bottom: 159px;
+        margin-bottom: 142px;
+        padding-bottom: 17px;
         color: $color-2;
 
         @include font('rel');
 
         &::before {
-            bottom: -17px;
             background-color: $color-6;
         }
 
         &::after {
-            bottom: -25px;
+            bottom: -8px;
             width: 38px;
             background-color: $color-10;
             background-image: url(../../../images/service/services.svg);
@@ -54,10 +54,13 @@
                 content: '';
                 display: inline-block;
                 position: absolute;
+                top: 68px;
                 right: 0;
+                left: -4px;
                 width: 28px;
                 height: 26px;
                 margin: 0 auto;
+                background-image: url(../../../images/service/stat.svg);
                 background-repeat: no-repeat;
             }
 

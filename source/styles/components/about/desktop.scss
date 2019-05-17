@@ -1,1 +1,15 @@
 // stylelint-disable
+.about {
+
+    .wrapper {
+        width: 990px;
+
+        .content .list .unit {
+            margin-bottom: 30px;
+
+            &:nth-child(even) {
+                margin-left: 0;
+            }
+        }
+    }
+}

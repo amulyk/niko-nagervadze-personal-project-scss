@@ -1,17 +1,17 @@
 .portfolio {
     padding: 39px 0 0;
 
-    h3 {
-        margin-bottom: 63px;
+    & > h3 {
+        margin-bottom: 41px;
+        padding-bottom: 22px;
         font-size: 27px;
 
         &::before {
-            bottom: -22px;
             width: 105px;
         }
 
         &::after {
-            bottom: -30px;
+            bottom: -8px;
             left: -5px;
             width: 33px;
         }
@@ -61,10 +61,10 @@
                 }
 
                 .footarea {
-                    padding: 13px 5px 11px;
+                    padding: 8px 5px 11px;
 
                     h3 {
-                        margin-bottom: 6px;
+                        margin-bottom: 1px;
                         margin-left: 3px;
                         font-size: 13.99px;
                     }
