@@ -2,7 +2,7 @@
     position: relative;
     height: 760px;
     background: $color-4;
-    box-shadow: 0 3px 5px rgba(0, 0, 0, .5);
+    box-shadow: 0 3px 5px rgba($color-11, .5);
     text-align: center;
 
     nav {
@@ -18,7 +18,7 @@
 
                 &::before {
                     content: '';
-                    background-image: url(../../../images/slider/prev.svg);
+                    background-image: url(/images/slider/prev.svg);
                 }
             }
 
@@ -27,7 +27,7 @@
 
                 &::before {
                     content: '';
-                    background-image: url(../../../images/slider/next.svg);
+                    background-image: url(/images/slider/next.svg);
                 }
             }
 
@@ -45,18 +45,16 @@
         width: 1170px;
 
         figure {
+            display: flex;
             position: absolute;
             z-index: 1;
             top: 0;
             left: 0;
+            align-items: center;
+            justify-content: center;
             width: 100%;
             height: 100%;
-
-            img {
-                width: 100%;
-                height: 100%;
-                object-fit: cover;
-            }
+            overflow: hidden;
         }
 
         .content {

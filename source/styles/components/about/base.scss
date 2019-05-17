@@ -2,7 +2,7 @@
     padding: 117px 0 108px;
 
     h3 {
-        margin-bottom: 101px;
+        margin-bottom: 94px;
         color: $color-5;
 
         @include font('rel');
@@ -13,7 +13,7 @@
 
         &::after {
             background-color: $color-2;
-            background-image: url(../../../images/about/info.svg);
+            background-image: url(/images/about/info.svg);
         }
 
         span {
@@ -33,7 +33,7 @@
             figure {
                 width: 510px;
                 height: 414px;
-                background-image: url(../../../images/about/image.png);
+                background-image: url(/images/about/image.png);
                 background-repeat: no-repeat;
 
                 img {
@@ -96,25 +96,18 @@
                         float: left;
                         border-radius: 50%;
                         background-color: $color-9;
-                        background-image: url(../../../images/about/settings.svg);
+                        background-image: url(/images/about/settings.svg);
                         background-repeat: no-repeat;
                         background-position: center;
                     }
 
-                    &.feat::before {
-                        background-image: url(../../../images/about/settings.svg);
-                    }
+                    $list: 'feat', 'location', 'heart', 'edit';
 
-                    &.place::before {
-                        background-image: url(../../../images/about/location.svg);
-                    }
+                    @each $item in $list {
 
-                    &.fav::before {
-                        background-image: url(../../../images/about/heart.svg);
-                    }
-
-                    &.edit::before {
-                        background-image: url(../../../images/about/edit.svg);
+                        &.#{$item}::before {
+                            background-image: url(/images/about/#{$item}.svg);
+                        }
                     }
 
                     h6 {

@@ -27,39 +27,3 @@ section,
     justify-content: space-between;
     width: 1170px;
 }
-
-section > h3 {
-    position: relative;
-    padding-bottom: 24px;
-    font-size: 31px;
-    font-weight: 600;
-    text-align: center;
-    text-transform: uppercase;
-    word-spacing: -1.1px;
-
-    &::before {
-        content: '';
-        display: inline-block;
-        position: absolute;
-        right: 0;
-        bottom: 0;
-        left: 0;
-        width: 111px;
-        height: 1.1px;
-        margin: 0 auto;
-    }
-
-    &::after {
-        content: '';
-        display: inline-block;
-        position: absolute;
-        right: 0;
-        bottom: -7px;
-        left: 0;
-        width: 34px;
-        height: 20px;
-        margin: 0 auto;
-        background-repeat: no-repeat;
-        background-position: center;
-    }
-}

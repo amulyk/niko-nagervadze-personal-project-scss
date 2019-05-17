@@ -2,20 +2,20 @@
     padding: 95px 0 121px;
 
     h3 {
-        margin-bottom: 98px;
-        padding-bottom: 21px;
+        margin-bottom: 88px;
+        padding-bottom: 31px;
         color: $color-5;
 
         @include font('rel');
 
         &::before {
+            bottom: 10px;
             background-color: $color-6;
         }
 
         &::after {
-            bottom: -10px;
             background-color: $color-2;
-            background-image: url(../../../images/contact/phone.svg);
+            background-image: url(/images/contact/phone.svg);
         }
 
         span {
@@ -54,7 +54,7 @@
                     display: inline-block;
                     height: 48px;
                     margin-bottom: 6px;
-                    background-image: url(../../../images/contact/location.svg);
+                    background-image: url(/images/contact/location.svg);
                     background-repeat: no-repeat;
                     background-position: top center;
                 }
@@ -67,7 +67,7 @@
 
                     &::before {
                         width: 26px;
-                        background-image: url(../../../images/contact/location.svg);
+                        background-image: url(/images/contact/location.svg);
                     }
                 }
 
@@ -76,7 +76,7 @@
 
                     &::before {
                         width: 30px;
-                        background-image: url(../../../images/contact/mail.svg);
+                        background-image: url(/images/contact/mail.svg);
                         background-position-y: 5px;
                     }
                 }
@@ -89,7 +89,7 @@
 
                     &::before {
                         width: 48px;
-                        background-image: url(../../../images/contact/support.svg);
+                        background-image: url(/images/contact/support.svg);
                     }
                 }
             }

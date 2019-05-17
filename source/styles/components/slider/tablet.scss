@@ -4,7 +4,7 @@
     .container {
         width: 100%;
 
-        .unit .content {
+        .unit {
 
             .content {
                 transform: translateY(-16px);
@@ -23,11 +23,12 @@
                 }
 
                 p {
-                    margin-bottom: 41px;
+                    margin-bottom: 42px;
+                    margin-left: 3px;
                     font-size: 18.9px;
                     font-weight: 300;
                     letter-spacing: -.1px;
-                    word-spacing: 2.5px;
+                    word-spacing: 1.4px;
                 }
 
                 & > a {

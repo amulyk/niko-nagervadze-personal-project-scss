@@ -3,21 +3,21 @@
     background-color: $color-10;
 
     & > h3 {
-        margin-bottom: 142px;
-        padding-bottom: 17px;
+        margin-bottom: 135px;
+        padding-bottom: 25px;
         color: $color-2;
 
         @include font('rel');
 
         &::before {
+            bottom: 8px;
             background-color: $color-6;
         }
 
         &::after {
-            bottom: -8px;
             width: 38px;
             background-color: $color-10;
-            background-image: url(../../../images/service/services.svg);
+            background-image: url(/images/service/services.svg);
         }
     }
 
@@ -35,7 +35,7 @@
                 width: 136px;
                 height: 163px;
                 transition: all .2s linear;
-                background-image: url(../../../images/service/polygon.svg), url(../../../images/service/polygon-fill.svg);
+                background-image: url(/images/service/polygon.svg), url(/images/service/polygon-fill.svg);
                 background-repeat: no-repeat;
                 background-position: center;
                 background-size: 100%, 0;
@@ -45,7 +45,7 @@
             &:hover {
 
                 &::before {
-                    background-image: url(../../../images/service/polygon.svg), url(../../../images/service/polygon-fill.svg);
+                    background-image: url(/images/service/polygon.svg), url(/images/service/polygon-fill.svg);
                     background-position: center, center;
                     background-size: 92%;
                 }
@@ -61,26 +61,26 @@
                 width: 28px;
                 height: 26px;
                 margin: 0 auto;
-                background-image: url(../../../images/service/stat.svg);
+                background-image: url(/images/service/stat.svg);
                 background-repeat: no-repeat;
             }
 
             &.rank::after {
                 top: 68px;
                 left: -4px;
-                background-image: url(../../../images/service/stat.svg);
+                background-image: url(/images/service/stat.svg);
             }
 
             &.visitors::after {
                 top: 71px;
                 left: -1px;
-                background-image: url(../../../images/service/visitors.svg);
+                background-image: url(/images/service/visitors.svg);
             }
 
             &.sales::after {
                 top: 71px;
                 left: 1px;
-                background-image: url(../../../images/service/sales.svg);
+                background-image: url(/images/service/sales.svg);
             }
 
             h3 {

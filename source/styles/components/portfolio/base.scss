@@ -2,20 +2,20 @@
     padding: 110px 0 0;
 
     h3 {
-        margin-bottom: 91px;
-        padding-bottom: 20px;
+        margin-bottom: 82px;
+        padding-bottom: 28px;
         color: $color-5;
 
         @include font('rel');
 
         &::before {
+            bottom: 9px;
             background-color: $color-6;
         }
 
         &::after {
-            bottom: -9px;
             background-color: $color-2;
-            background-image: url(../../../images/portfolio/portfolio.svg);
+            background-image: url(/images/portfolio/portfolio.svg);
         }
 
         span {
@@ -92,12 +92,12 @@
 
                         &.view::before {
                             margin-top: 5px;
-                            background-image: url(../../../images/portfolio/eye.svg);
+                            background-image: url(/images/portfolio/eye.svg);
                         }
 
                         &.more::before {
                             margin-top: 2px;
-                            background-image: url(../../../images/portfolio/link.svg);
+                            background-image: url(/images/portfolio/link.svg);
                         }
 
                         &.active,
