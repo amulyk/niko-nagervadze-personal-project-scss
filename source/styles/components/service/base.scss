@@ -34,10 +34,11 @@
                 display: inline-block;
                 width: 136px;
                 height: 163px;
-                background-image: url(../../../images/service/polygon.svg);
+                transition: all .2s linear;
+                background-image: url(../../../images/service/polygon.svg), url(../../../images/service/polygon-fill.svg);
                 background-repeat: no-repeat;
                 background-position: center;
-                background-size: 100%;
+                background-size: 100%, 0;
             }
 
             &.active,

@@ -3,33 +3,36 @@
 
     .container {
         width: 100%;
-        transform: translateY(-16px);
 
         .unit .content {
 
-            h4 {
-                margin-left: -3px;
-                font-size: 58.81px;
-                word-spacing: normal;
-            }
+            .content {
+                transform: translateY(-16px);
 
-            h3 {
-                margin-bottom: 9px;
-                margin-left: -5px;
-                font-size: 71px;
-                word-spacing: -3px;
-            }
+                h4 {
+                    margin-left: -3px;
+                    font-size: 58.81px;
+                    word-spacing: normal;
+                }
 
-            p {
-                margin-bottom: 41px;
-                font-size: 18.9px;
-                font-weight: 300;
-                letter-spacing: -.1px;
-                word-spacing: 2.5px;
-            }
+                h3 {
+                    margin-bottom: 9px;
+                    margin-left: -5px;
+                    font-size: 71px;
+                    word-spacing: -3px;
+                }
 
-            & > a {
-                margin-left: -6px;
+                p {
+                    margin-bottom: 41px;
+                    font-size: 18.9px;
+                    font-weight: 300;
+                    letter-spacing: -.1px;
+                    word-spacing: 2.5px;
+                }
+
+                & > a {
+                    margin-left: -6px;
+                }
             }
         }
     }
