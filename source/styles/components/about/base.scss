@@ -101,7 +101,7 @@
                         background-position: center;
                     }
 
-                    $list: 'feat', 'location', 'heart', 'edit';
+                    $list: 'feat', 'place', 'fav', 'edit';
 
                     @each $item in $list {
 
